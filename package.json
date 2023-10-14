@@ -1,0 +1,36 @@
+{
+  "name": "finances",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "knex": "node --no-warnings --loader tsx ./node_modules/.bin/knex",
+    "lint": "eslint src --ext .ts --fix && npx prettier . --write",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/supertest": "^2.0.14",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "eslint": "^8.51.0",
+    "prettier": "3.0.3",
+    "supertest": "^6.3.3",
+    "tsx": "^3.13.0",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^9.1.0",
+    "@types/node": "^20.8.6",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.24.1",
+    "knex": "^3.0.1",
+    "pg": "^8.11.3",
+    "sqlite3": "^5.1.6",
+    "zod": "^3.22.4"
+  }
+}
